@@ -107,11 +107,15 @@ module Core
       end
     end
 
-    def get_scene(is_root = false)
+    def get_scene(is_root = false, &block)
       _scene  = self
       _parent = _scene.parent
 
       while true
+        if block
+          block.call(_scene)
+        end
+
         if is_root
           if _parent == nil
             break

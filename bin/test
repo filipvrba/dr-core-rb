@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+ROOT = File.expand_path("..", __dir__)
+$: << ROOT
+require_relative "#{ROOT}/test/main"
