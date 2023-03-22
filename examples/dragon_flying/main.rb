@@ -1,4 +1,5 @@
 require 'lib/core.rb'
+require 'app/components.rb'
 require "app/scenes.rb"
 
 def tick args
