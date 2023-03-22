@@ -1,0 +1,4 @@
+#!/bin/bash
+
+path=~/Desktop/dragonruby-linux-amd64/mygame
+cp -r --copy-contents ./lib $path
