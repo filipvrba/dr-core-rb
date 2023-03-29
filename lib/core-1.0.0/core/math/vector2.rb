@@ -54,5 +54,15 @@ module Core
     def to_s
       "(#{@x}, #{@y})"
     end
+
+    def eql? vector
+      return @x == vector.x && @y == vector.y
+    end
+
+    def linear_interpolation(other_vector, t)
+      x = @x + (other_vector.x - @x) * t
+      y = @y + (other_vector.y - @y) * t
+      return Vector2D.new(x, y)
+    end
   end 
 end

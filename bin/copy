@@ -1,4 +1,4 @@
 #!/bin/bash
 
-path=~/Desktop/dragonruby-linux-amd64/mygame
+path=~/Documents/dragonruby/fifteen-puzzle-dr
 cp -r --copy-contents ./lib $path
