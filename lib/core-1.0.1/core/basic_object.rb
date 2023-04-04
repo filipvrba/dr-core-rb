@@ -169,5 +169,16 @@ module Core
 
       return result
     end
+
+    def find_children(id)
+      result = []
+      @children.each do |child|
+        if child.id.index(id)
+          result << child
+        end
+      end
+
+      return result
+    end
   end
 end

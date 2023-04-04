@@ -1,4 +1,5 @@
-require 'lib/core'
+require 'lib/core-1.0.1/core'
+require 'lib/core-1.0.1/objects'
 require_relative './signals'
 require_relative './scenes'
 
@@ -14,6 +15,7 @@ root.add square, "square_01"
 
 while true
   sleep 1
+  Core::Clock.delta_time
   
   root.emit(Core::Events::INPUT, nil)
   root.emit(Core::Events::UPDATE, nil)
